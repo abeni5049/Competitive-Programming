@@ -5,10 +5,6 @@
 #         self.next = next
 class Solution:
     def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        """
-            Input: head = [1,2,3,4,5,6], k = 3
-                               i            
-        """
         num = 0
         curr = head
         while curr:
