@@ -13,9 +13,7 @@ class Solution:
                 if node and sum_+node.val == targetSum:
                     res.append(ancestors+[node.val])
                 return
-            ans = None
-            l = dfs(node.left,ancestors+[node.val],sum_+node.val)
-            r = dfs(node.right,ancestors+[node.val],sum_+node.val)
-            return 
+            dfs(node.left,ancestors+[node.val],sum_+node.val)
+            dfs(node.right,ancestors+[node.val],sum_+node.val)
         dfs(root,[],0)
         return res
